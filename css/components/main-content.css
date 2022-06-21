@@ -1,0 +1,11 @@
+.main-content {
+  margin-top: 3rem;
+  opacity: 1;
+  margin-block-end: 2rem;
+
+  transition: opacity 0.4s;
+}
+
+.main-content.hide {
+  opacity: 0;
+}

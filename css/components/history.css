@@ -1,0 +1,18 @@
+.history {
+  background-color: #adb5bd;
+  padding: 1rem;
+  color: #212529;
+  border-radius: 9px;
+  margin-block-end: 2rem;
+}
+
+.keywords-contianer span {
+  cursor: pointer;
+  margin-inline-end: 0.4rem;
+  text-decoration: underline;
+  font-size: 0.875rem;
+}
+
+.keywords-contianer span:hover {
+  color: #868e96;
+}

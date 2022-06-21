@@ -1,0 +1,11 @@
+.player-container {
+  flex-basis: 50%;
+}
+
+.player {
+  margin-block-end: 2rem;
+}
+
+.wiki-text p {
+  margin-block-end: 1rem;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script
+      defer
+      src="https://kit.fontawesome.com/0d3f998bf1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="lib/swal.js"></script>
+    <script src="js/services/storageService.js"></script>
+    <script src="js/services/utilService.js"></script>
+    <script src="js/services/wikitubeService.js"></script>
+    <script src="js/wikitubeController.js"></script>
+    <title>WikiTube</title>
+  </head>
+  <body onload="init()">
+    <header class="header main-layout flex space-between align-center">
+      <div class="logo-box">
+        <img src="img/logo.png" alt="wikitube-logo" />
+      </div>
+      <div class="search-box">
+        <i class="icon fa-solid fa-magnifying-glass"></i>
+        <form onsubmit="onUserSearch(event)">
+          <input class="input" type="search" placeholder="Search..." />
+          <button class="btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </header>
+    <main class="main-content main-layout flex space-between">
+      <div class="top-five">
+        <!-- Search results will render here -->
+        <ul class="results clean-list"></ul>
+      </div>
+      <div class="player-container">
+        <!-- Video will render here  -->
+        <div class="player"></div>
+
+        <div class="wiki-desc">
+          <!-- Wiki Descriptions will render here  -->
+          <div class="wiki-text"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="main-layout">
+      <!-- Keywords history will render here -->
+      <div class="history flex space-between align-center">
+        <h3>History</h3>
+        <div class="keywords-contianer"></div>
+        <button class="btn clear-history" onclick="onClearHistory()">
+          <i class="fa-solid fa-trash-can"></i>
+        </button>
+      </div>
+
+      <p class="footer">© Coffeeright - CaMay22 - WikiTube Ex - Guy Kadosh</p>
+    </footer>
+
+    <!-- Loader -->
+    <div class="spinner main-spinner">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </body>
+</html>

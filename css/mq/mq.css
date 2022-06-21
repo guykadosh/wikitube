@@ -1,0 +1,65 @@
+@media (max-width: 980px) {
+  .main-layout {
+    max-width: 760px;
+  }
+
+  .main-content {
+    flex-direction: column-reverse;
+  }
+
+  iframe {
+    width: 450px;
+    height: 345px;
+  }
+  .player-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wiki-desc {
+    max-width: 420px;
+  }
+
+  .results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .result {
+    width: 80%;
+  }
+
+  .input {
+    width: 14rem;
+  }
+}
+
+@media (max-width: 460px) {
+  html {
+    font-size: 85%;
+  }
+
+  .player {
+    width: 100%;
+  }
+  iframe {
+    width: 100%;
+    height: 245px;
+  }
+
+  .main-layout {
+    max-width: 100%;
+    padding-inline-start: 1.75rem;
+    padding-inline-end: 1.75rem;
+  }
+
+  .result {
+    width: 100%;
+  }
+  .input {
+    width: 10rem;
+  }
+}
